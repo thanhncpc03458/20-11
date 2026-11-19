@@ -175,7 +175,7 @@ function App() {
         <FloatingPetals count={10} /><Sparkles count={16} />
         <div className="section-intro reveal">
           <p className="eyebrow">KHU VƯỜN CỦA LÒNG BIẾT ƠN</p>
-          <h2>Chúc mừng<br /><em>ngày của cô</em></h2>
+          <h2>Chúc mừng<br /><em>ngày của em</em></h2>
           <div className="date-mark">20 <span>·</span> 11</div>
           <p>Ngày dành để nói lời cảm ơn đến những người đặc biệt.</p>
         </div>
@@ -213,7 +213,7 @@ function App() {
 
       <section id="gift" className="gift-section section-shell">
         <div className="gift-copy reveal"><span className="chapter-label">MÓN QUÀ HOA</span><h2>Một chút<br /><em>niềm vui.</em></h2><p>{greeting.flowerMessage}</p><button className="outline-button" onClick={() => { setGiftOpen(true); playNote(); }}>TẶNG CÔ MỘT BÓ HOA <span>✦</span></button></div>
-        <div className="gift-stage"><Bouquet visible={giftOpen} /><div className="gift-ribbon">TẶNG CÔ</div>{giftOpen && <div className="gift-sparkles">✦　·　✧　·　✦</div>}</div>
+        <div className="gift-stage"><Bouquet visible={giftOpen} /><div className="gift-ribbon">TẶNG EM</div>{giftOpen && <div className="gift-sparkles">✦　·　✧　·　✦</div>}</div>
       </section>
 
       <section id="secret" className="secret-section section-shell reveal">
@@ -225,12 +225,12 @@ function App() {
 
       <section className="interactions section-shell">
         <div className="interaction-card reveal"><span className="chapter-label">MỘT CỬ CHỈ NHỎ</span><h3>Nhấn để thả<br /><em>một bông hoa.</em></h3><button className="flower-button" onClick={addHeart} aria-label="Thả một bông hoa">✿</button><p>Một chút dịu dàng cho ngày hôm nay.</p></div>
-        <div className="interaction-card reveal"><span className="chapter-label">MỘT TRANG ĐỂ GIỮ LẠI</span><h3>Những dòng chữ<br /><em>ở lại.</em></h3><div className={`mini-book page-${bookPage}`}><div><p>“Một người cô tốt<br />gieo hạt giống<br />cho cả tương lai.”</p></div><div><p>Cảm ơn cô<br />vì từng<br />tia sáng nhỏ.</p></div></div><button className="page-button" onClick={() => setBookPage((page) => page === 0 ? 1 : 0)}>LẬT TRANG ↗</button></div>
+        <div className="interaction-card reveal"><span className="chapter-label">MỘT TRANG ĐỂ GIỮ LẠI</span><h3>Những dòng chữ<br /><em>ở lại.</em></h3><div className={`mini-book page-${bookPage}`}><div><p>“Một người tốt<br />gieo hạt giống<br />cho cả tương lai.”</p></div><div><p>Cảm ơn em<br />vì từng<br />tia sáng nhỏ.</p></div></div><button className="page-button" onClick={() => setBookPage((page) => page === 0 ? 1 : 0)}>LẬT TRANG ↗</button></div>
       </section>
 
       <section id="final" className={`final-section ${celebrate ? "celebrating" : ""}`}>
         <FloatingPetals count={22} /><Sparkles count={28} /><Bouquet visible />
-        <div className="final-copy"><p className="final-line">Có những người trao đi bài học.</p><p className="final-line delay-one">Có những người để lại ký ức đẹp.</p><p className="final-line delay-two">Và có những người trở thành một phần đặc biệt của hành trình.</p><div className="final-divider" /><h2>Cảm ơn cô<br /><em>vì đã là chính cô.</em></h2><p className="final-date">CHÚC MỪNG NGÀY NHÀ GIÁO VIỆT NAM · 20/11</p><p className="final-wish">{greeting.wish}</p></div>
+        <div className="final-copy"><p className="final-line">Có những người trao đi bài học.</p><p className="final-line delay-one">Có những người để lại ký ức đẹp.</p><p className="final-line delay-two">Và có những người trở thành một phần đặc biệt của hành trình.</p><div className="final-divider" /><h2>Cảm ơn em<br /><em>vì đã là chính em.</em></h2><p className="final-date">CHÚC MỪNG NGÀY NHÀ GIÁO VIỆT NAM · 20/11</p><p className="final-wish">{greeting.wish}</p></div>
         <button className="finish-button" onClick={finishJourney}>{celebrate ? "♡ VỚI TẤT CẢ LÒNG BIẾT ƠN ♡" : "HOÀN THÀNH HÀNH TRÌNH ✦"}</button>
       </section>
     </main>
